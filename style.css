@@ -1,0 +1,50 @@
+.container :is(h2, h3) {
+    color: red;
+}
+
+/* is only work if h2 is available may replcae :matches() or :any()*/
+
+main :first-child {
+    margin-block-start: 50;
+    background-color: black;
+  }
+
+  :where(main :first-child) {
+    margin-block-start: 0;
+  }
+
+header p {
+    color: green;
+  }
+
+article section :not(:first-child) :is(.secondary) :is(h1, h2) {
+    color: yellow;
+}
+
+/* styles applied to the <a> element */
+article:has(h2) {
+    border: 2px solid black;
+    background-color: black;
+    color: blue;
+  }
+
+  /* li:has(> a.active) */
+
+  
+  .box {
+    height: 150px;
+    width: 150px;
+    background: green;
+    position: absolute;  
+    padding: 12px;
+    color: white;
+  }
+  
+  .box p {
+    margin: 4px;
+  }
+  
+  .box span {
+    font-weight: bold;
+    padding-left: 5px;
+  }

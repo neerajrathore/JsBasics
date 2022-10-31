@@ -1,0 +1,21 @@
+.gallery-container {
+    position: relative;
+}
+
+.slides {
+    margin: 0 15px;
+    display: grid;
+    align-content: stretch;
+    justify-content: space-around;
+    grid-auto-flow: column;
+    gap: 10px;
+    overscroll-behavior-x: contain;
+}
+
+.slides > div {
+    margin-top: 5em;
+}
+
+.slides > div img {
+    margin-bottom: 10em;
+}
