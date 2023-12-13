@@ -32,6 +32,13 @@ let f = {...c, foods: {...c.foods}, drink: {...c.drink}} // this will replace ce
 
 // rambaan
 let g = JSON.parse(JSON.stringify(c))
+// parse changes JSON string to JS Object
+let userStr = '{"name":"Sammy","email":"sammy@example.com","plan":"Pro"}';
+// JSON.parse(userStr) {name: 'Sammy', email: 'sammy@example.com', plan: 'Pro'}
+
+// stringify chnages JS Object to JSON string
+let userObj = { name: "Sammy", email: "sammy@example.com", plan: "Pro" };
+// JSON.stringify(userObj) {"name":"Sammy","email":"sammy@example.com","plan":"Pro"}
 
 // for arrays 
 let h = [1, 2, 3]
