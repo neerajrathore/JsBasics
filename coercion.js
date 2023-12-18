@@ -36,3 +36,13 @@ array.map((ele, index) => {
     }
 })
 console.log(array, aray);
+
+// this creates object map and we acces a key in onject like obj[key] gives value on that key
+let count = {}
+let array = [1, 1, 2, 3, 4, 5, 5, 6, 5]
+for (let i = 0; i < array.length; i++) {
+    let num = array[i]
+    count[num] = count[num] ? count[num] + 1 : 1
+}
+ 
+console.log(count, "count");  // {"1": 2,"2": 1,"3": 1,"4": 1,"5": 3,"6": 1}
